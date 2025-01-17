@@ -1,5 +1,9 @@
-# Sistema de Comentario(basic)
+# Sistema de comentários(basic)
+Criei esse sistema básico de comentários porque, ao desenvolver um blog, optei por criar meu próprio sistema de comentários em vez de usar uma API pronta.
 
+>"Um bom desenvolvedor deve saber que, para coisas simples, é melhor criar do que usar APIs prontas. APIs podem ocupar mais espaço."
+
+"Cada kilobyte deve ser aproveitado."(EiJhonatan)
 
 
 ![alt text](/imgs/image.png)
