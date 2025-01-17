@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>registrar</title>
+</head>
+<body>
+  <h1>registrar</h1>
+  <% if (error) { %>
+    <p style="color: red;"><%= error %></p>
+  <% } %>
+  <form action="/register" method="POST">
+    <input type="text" name="username" placeholder="Username" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <button type="submit">registrar</button>
+  </form>
+  <p><a href="/login">Login</a></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>sistema de comentario(basic)</title>
+</head>
+<body>
+  <h1>Sistema de Comentario(basic)</h1>
+  <% if (user) { %>
+    <p>Welcome, <%= user.username %>! <a href="/logout">Logout</a></p>
+    <form action="/comment" method="POST">
+      <textarea name="comment" required></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+  <% } else { %>
+    <p><a href="/login">Login</a> ou <a href="/register">Cadastra</a> para comenta.</p>
+  <% } %>
+  <h2>Comentarios:</h2>
+  <ul>
+    <% comments.forEach(comment => { %>
+      <li><strong><%= comment.username %>:</strong> <%= comment.comment %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
